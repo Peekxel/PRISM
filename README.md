@@ -38,7 +38,7 @@ Each dataset has been harmonized and includes standardized metadata in the `.obs
 * **Cell Type**: Includes various cell types such as T Cells, Lung Cells, Neural Cells, iPSCs, etc.
 * **CRISPR Type**: One of *CRISPRi*, *CRISPRa*, or *CRISPR KO*.
 * **Cancer Type**: Categorized as Melanoma, Lung Cancer, Non-Cancer, etc.
-* **Conditions**: Control or test.
+* **Condition**: Control or test.
 * **Perturbation Name**: The target gene(s), e.g., *Gene A* for single perturbations or *Gene A + Gene B* for multiple perturbations.
 
 ## 📂 Available Datasets
