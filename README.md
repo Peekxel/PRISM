@@ -1,6 +1,6 @@
 # 📊 PRISM: Perturbation Response Integration of Single-cell Measurements
 
-Welcome to **PRISM** (**Perturbation Response Integration of Single-cell Measurements**), a collection of 28 harmonized single-cell datasets with over 5 million cells in **.h5ad** format. These datasets have been processed and integrated into a unified dataset named **PRISM**, ensuring consistency in metadata annotations. All scripts used for processing and analysis are available in the `scripts/` folder.
+Welcome to **PRISM** (**Perturbation Response Integration of Single-cell Measurements**), a collection of 28 harmonized single-cell datasets with over 5 million cells in **.h5ad** format. These datasets have been processed and integrated into a unified dataset named **PRISM**, ensuring consistency in metadata annotations. All scripts used for processing and analysis are available in the `Preprocessing Scripts/` folder.
 
 If you want to run **perturbation experiments** using an AI model trained on these datasets, visit [**this page**](https://peek.art/projects/heatmap/2-3). The code used to train the AI model can be found in the `AI model` folder.
 
