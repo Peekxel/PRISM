@@ -36,7 +36,7 @@ Each dataset has been harmonized and includes standardized metadata in the `.obs
    * Dogs (*Canis lupus familiaris*)
    * Pigs (*Sus scrofa*)
 * **Cell Type**: Includes various cell types such as T Cells, Lung Cells, Neural Cells, iPSCs, etc.
-* **CRISPR Type**: One of *CRISPRi*, *CRISPRa*, *CRISPR KO*, etc.
+* **CRISPR Type**: *CRISPRi*, *CRISPRa*, *CRISPR KO*, etc.
 * **Cancer Type**: Categorized as Melanoma, Lung Cancer, Non-Cancer, etc.
 * **Condition**: Control or Test.
 * **Perturbation Name**: The target gene(s), e.g., *Gene A* for single perturbations or *Gene A + Gene B* for multiple perturbations.
