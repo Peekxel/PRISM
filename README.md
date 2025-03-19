@@ -1,8 +1,8 @@
 # 📊 PRISM: Perturbation Response Integration of Single-cell Measurements
 
-Welcome to **PRISM** (**Perturbation Response Integration of Single-cell Measurements**), a collection of over 70 harmonized single-cell datasets with over 10 million cells in **.h5ad** format. These datasets have been processed and integrated into a unified dataset named **PRISM**, ensuring consistency in metadata annotations. All scripts used for processing and analysis are available in the `scripts/` folder.
+Welcome to **PRISM** (**Perturbation Response Integration of Single-cell Measurements**), a collection of over 70 harmonized single-cell datasets with over 10 million cells in **.h5ad** format. These datasets have been processed and integrated into a unified dataset named **PRISM**, ensuring consistency in metadata annotations. All scripts used for processing and analysis are available in the `Preprocessing Scripts/` folder.
 
-If you want to run **perturbation experiments** using an AI model trained on these datasets, visit [**this page**](https://peek.art/projects/heatmap/2-3). The code used to train the AI model can be found in the `AI model` folder.
+If you want to run **perturbation experiments** using an AI model trained on these datasets, visit [**this page**](https://peek.art/projects/heatmap/2-3). The AI model utilizes flow matching technique and [GenePT](https://github.com/yiqunchen/GenePT) for gene embedding. The code used to train the AI model can be found in the `AI model` folder.
 
 ## 📂 PRISM Dataset Composition
 
@@ -59,9 +59,9 @@ Each dataset has been harmonized and includes standardized metadata in the `.obs
    * Dogs (*Canis lupus familiaris*)
    * Pigs (*Sus scrofa*)
 * **Cell Type**: Includes various cell types such as T Cells, Lung Cells, Neural Cells, iPSCs, etc.
-* **CRISPR Type**: One of *CRISPRi*, *CRISPRa*, or *CRISPR KO*.
+* **CRISPR Type**: *CRISPRi*, *CRISPRa*, *CRISPR KO*, etc.
 * **Cancer Type**: Categorized as Melanoma, Lung Cancer, Non-Cancer, etc.
-* **Conditions**: Control or test.
+* **Conditions**: IFNγ stimulated, Control, Test, etc.
 * **Perturbation Name**: The target gene(s), e.g., *Gene A* for single perturbations or *Gene A + Gene B* for multiple perturbations.
 
 ## 📂 Available Datasets
@@ -101,7 +101,7 @@ Below is the list of individual datasets included in PRISM, along with their res
 | [GSE150062](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE150062) | Humans (Homo sapiens) | iPSCs (induced pluripotent stem cells) | CRISPRi | non-cancer | 2 (test, control) | 241 | 78,393 | [Download](https://drive.google.com/drive/folders/1Y0Z19JhiTmTch65kvBNNMdVtosH6QHfi?usp=sharing) |
 | [GSE146194](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE146194) | Humans (Homo sapiens) | leukemia cell | CRISPRi, CRISPRa | Leukemia | 2 (test, control) | 373 | 259,673 | [Download](https://drive.google.com/drive/folders/1Y0Z19JhiTmTch65kvBNNMdVtosH6QHfi?usp=sharing) |
 | [GSE133344](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE133344) | Humans (Homo sapiens) | K562 chronic myelogenous leukemia cell | CRISPRi | Leukemiaa | 2 (test, control) | 108 | 111,445 | [Download](https://drive.google.com/drive/folders/1Y0Z19JhiTmTch65kvBNNMdVtosH6QHfi?usp=sharing) |
-| [GSE252589](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE252589) | Mus musculus | Osteosarcoma | None | Osteosarcoma | 2 (Control, Test) | 2 | 23,297 | [Download](https://drive.google.com/drive/folders/1Y0Z19JhiTmTch65kvBNNMdVtosH6QHfi?usp=sharing) |
+| [GSE252589](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE252589) | Mus musculus | 143B | None | Osteosarcoma | 2 (Control, Test) | 2 | 23,297 | [Download](https://drive.google.com/drive/folders/1Y0Z19JhiTmTch65kvBNNMdVtosH6QHfi?usp=sharing) |
 | [GSE283614](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE283614) | Homo sapiens | Embryonic Stem Cells | CRISPR KO | Non-Cancer | 2 (Test, Control) | 2 | 12,844 | [Download](https://drive.google.com/drive/folders/1Y0Z19JhiTmTch65kvBNNMdVtosH6QHfi?usp=sharing) |
 | [GSE278572](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE278572) | Homo sapiens | CD4+ T Cells | CRISPRi | Non-Cancer | 2 (Test, Control) | 4,712 | 249,799 | [Download](https://drive.google.com/drive/folders/1Y0Z19JhiTmTch65kvBNNMdVtosH6QHfi?usp=sharing) |
 | [GSE274751](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE274751) | Homo sapiens | Multiple T cell types | CRISPR KO | Non-Cancer | 1 (Test) | 32,178 | 173,018 | [Download](https://drive.google.com/drive/folders/1Y0Z19JhiTmTch65kvBNNMdVtosH6QHfi?usp=sharing) |
