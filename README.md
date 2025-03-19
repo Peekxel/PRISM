@@ -151,7 +151,6 @@ Below is the list of individual datasets included in PRISM, along with their res
 
 ## 📥 Download Options
 
-You can access the data from the link provided below:
 
 **Individual Datasets**: Download h5ad files separately based on study from [this Google Drive folder](https://drive.google.com/drive/folders/1Y0Z19JhiTmTch65kvBNNMdVtosH6QHfi?usp=sharing).
 
