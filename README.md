@@ -1,8 +1,10 @@
 # 📊 PRISM: Perturbation Response Integration of Single-cell Measurements
 
-Welcome to **PRISM** (**Perturbation Response Integration of Single-cell Measurements**), a collection of over 70 harmonized single-cell datasets with over 10 million cells in **.h5ad** format. These datasets have been processed and integrated into a unified dataset named **PRISM**, ensuring consistency in metadata annotations. All scripts used for processing and analysis are available in the `Preprocessing Scripts/` folder.
+Welcome to **PRISM** (**Perturbation Response Integration of Single-cell Measurements**), a collection of over 70 harmonized single-cell datasets with over 10 million cells in **.h5ad** format. These datasets have been processed and integrated into a unified dataset named **PRISM**, ensuring consistency in metadata annotations. The collection also includes 29 CITE-seq* datasets with approximately 2 million cells that provide paired gene and protein expression measurements. All scripts used for processing and analysis are available in the `Preprocessing Scripts/` folder.
 
 If you want to run **perturbation experiments** using an AI model trained on these datasets, visit [**this page**](https://peek.art/projects/heatmap/2-3). The AI model utilizes flow matching technique and [GenePT](https://github.com/yiqunchen/GenePT) for gene embedding. The code used to train the AI model can be found in the `AI model` folder.
+
+*Although these CITE-seq datasets are not perturbation screens, their integration with PRISM might give insight into protein changes during perturbation screens.
 
 ## 📂 PRISM Dataset Composition
 
@@ -146,13 +148,53 @@ Below is the list of individual datasets included in PRISM, along with their res
 | [GSE261157](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE261157) | Homo sapiens | Multiple neural cell types | None | Non-Cancer | 3 (Control, AxD_Cerebral, AxD_Cortical) | 2 | 30,656 | [Download](https://drive.google.com/drive/folders/1Y0Z19JhiTmTch65kvBNNMdVtosH6QHfi?usp=sharing) |
 | [GSE216673](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE216673) | Homo sapiens | Microglia | CRISPR KO | Non-Cancer | 2 (Control, Test) | 2 | 55,156 | [Download](https://drive.google.com/drive/folders/1Y0Z19JhiTmTch65kvBNNMdVtosH6QHfi?usp=sharing) |
 | [GSE221882](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE221882) | Homo sapiens | iPSC-derived cortical organoid | None, CRISPR_correction | Non-Cancer | 2 (Test, Control) | 2 | 25,241 | [Download](https://drive.google.com/drive/folders/1Y0Z19JhiTmTch65kvBNNMdVtosH6QHfi?usp=sharing) |
-| [GSE280767](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE280767) | Homo sapiens | T Cells, Huh7 | CRISPR Cas9, ABE, ABE-V106W | Non-Cancer, Hepatocellular carcinoma | 5 (Unknown, Control, Day 3, Day 7, Day 21) | 3 | 246,027 | [Download](https://drive.google.com/drive/folders/1Y0Z19JhiTmTch65kvBNNMdVtosH6QHfi?usp=sharing) |.cgi?acc# PRISM: Perturbation Response Integration of Single-cell Measurements
-
+| [GSE280767](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE280767) | Homo sapiens | T Cells, Huh7 | CRISPR Cas9, ABE, ABE-V106W | Non-Cancer, Hepatocellular carcinoma | 5 (Unknown, Control, Day 3, Day 7, Day 21) | 3 | 246,027 | [Download](https://drive.google.com/drive/folders/1Y0Z19JhiTmTch65kvBNNMdVtosH6QHfi?usp=sharing) |
 
 ## 📥 Download Options
 
-
 **Individual Datasets**: Download h5ad files separately based on study from [this Google Drive folder](https://drive.google.com/drive/folders/1Y0Z19JhiTmTch65kvBNNMdVtosH6QHfi?usp=sharing).
+
+
+## 📂 CITE-seq Datasets
+
+PRISM now includes paired gene and protein expression measurements through CITE-seq technology. These datasets provide multi-modal insights into cellular states and responses to perturbations:
+
+| Dataset ID | Organism | Cell Type | Cancer Type | Conditions | # of Cells | h5ad file |
+|------------|----------|-----------|-------------|------------|------------|-----------|
+| [GSE290479](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE290479) | Mus musculus | Cardiac immune cells | Non-Cancer | CD40_agonist, Control | 11,995 | [Download](https://drive.google.com/drive/folders/1xLac4niVh4tmC1a5GFBNEzrlmHxb723e?usp=sharing) |
+| [GSE289084](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE289084) | Homo sapiens | PBMC | Melanoma | Unknown, Baseline | 112,701 | [Download](https://drive.google.com/drive/folders/1xLac4niVh4tmC1a5GFBNEzrlmHxb723e?usp=sharing) |
+| [GSE270629](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE270629) | Mus musculus | Brain Immune Cell | Brain Metastasis, Non-Cancer | Multiple timepoints with/without ABX | 56,390 | [Download](https://drive.google.com/drive/folders/1xLac4niVh4tmC1a5GFBNEzrlmHxb723e?usp=sharing) |
+| [GSE288020](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE288020) | Homo sapiens | Bone Marrow Cells | MGUS, Multiple Myeloma | Control | 108,250 | [Download](https://drive.google.com/drive/folders/1xLac4niVh4tmC1a5GFBNEzrlmHxb723e?usp=sharing) |
+| [GSE267070](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE267070) | Mus musculus | CD45+ Immune Cells | Melanoma | Ad Libitum, Dietary Restriction | 210,257 | [Download](https://drive.google.com/drive/folders/1xLac4niVh4tmC1a5GFBNEzrlmHxb723e?usp=sharing) |
+| [GSE286927](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE286927) | Homo sapiens | Marginal Zone Lymphoma | Marginal Zone Lymphoma | Tumor | 22,472 | [Download](https://drive.google.com/drive/folders/1xLac4niVh4tmC1a5GFBNEzrlmHxb723e?usp=sharing) |
+| [GSE270795](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE270795) | Homo sapiens | MAIT cells | Non-Cancer | IL-23 stimulated, Control, IL-12 stimulated | 63,575 | [Download](https://drive.google.com/drive/folders/1xLac4niVh4tmC1a5GFBNEzrlmHxb723e?usp=sharing) |
+| [GSE234610](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE234610) | Homo sapiens | T-ALL | T-ALL | Primary | 220,379 | [Download](https://drive.google.com/drive/folders/1xLac4niVh4tmC1a5GFBNEzrlmHxb723e?usp=sharing) |
+| [GSE254179](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE254179) | Homo sapiens | T Cells | Non-Cancer | SARS-CoV-2 specific | 1,590 | [Download](https://drive.google.com/drive/folders/1xLac4niVh4tmC1a5GFBNEzrlmHxb723e?usp=sharing) |
+| [GSE277081](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE277081) | Mus musculus | CD8+ T cell | Non-Cancer | LCMV Armstrong infection, Influenza PR8 infection | 88,772 | [Download](https://drive.google.com/drive/folders/1xLac4niVh4tmC1a5GFBNEzrlmHxb723e?usp=sharing) |
+| [GSE284526](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE284526) | Homo sapiens | PBMCs, B cells | Non-Cancer | Healthy Control, B cells, ATRIP-deficient | 47,047 | [Download](https://drive.google.com/drive/folders/1xLac4niVh4tmC1a5GFBNEzrlmHxb723e?usp=sharing) |
+| [GSE246317](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE246317) | Homo sapiens | PBMC | Non-Cancer | ICI_treatment_4h, ICI_treatment_24h | 37,624 | [Download](https://drive.google.com/drive/folders/1xLac4niVh4tmC1a5GFBNEzrlmHxb723e?usp=sharing) |
+| [GSE279774](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE279774) | Homo sapiens | Dendritic cells | Non-Cancer | Homeostatic | 21,552 | [Download](https://drive.google.com/drive/folders/1xLac4niVh4tmC1a5GFBNEzrlmHxb723e?usp=sharing) |
+| [GSE279408](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE279408) | Homo sapiens | Unknown | Non-Cancer | endocervix, endometrium, Unknown | 19,725 | [Download](https://drive.google.com/drive/folders/1xLac4niVh4tmC1a5GFBNEzrlmHxb723e?usp=sharing) |
+| [GSE279775](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE279775) | Homo sapiens | Dendritic cells | Non-Cancer | HIV, Control | 50,428 | [Download](https://drive.google.com/drive/folders/1xLac4niVh4tmC1a5GFBNEzrlmHxb723e?usp=sharing) |
+| [GSE280853](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE280853) | Mus musculus | P14 CD8 T cell | Melanoma | wild-type mouse PD1, ICD-humanized mouse PD1 | 11,576 | [Download](https://drive.google.com/drive/folders/1xLac4niVh4tmC1a5GFBNEzrlmHxb723e?usp=sharing) |
+| [GSE261278](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE261278) | Homo sapiens | Multiple T and B cell subtypes | Non-Cancer | Multiple conditions including unstimulated, flu, SARS | 213,005 | [Download](https://drive.google.com/drive/folders/1xLac4niVh4tmC1a5GFBNEzrlmHxb723e?usp=sharing) |
+| [GSE279632](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE279632) | Homo sapiens | Cardiomyocyte | Non-Cancer | Control | 14,829 | [Download](https://drive.google.com/drive/folders/1xLac4niVh4tmC1a5GFBNEzrlmHxb723e?usp=sharing) |
+| [GSE279098](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE279098) | Mus musculus | Liver immune cells | Liver cancer | BAAT-knockout, control, native | 23,890 | [Download](https://drive.google.com/drive/folders/1xLac4niVh4tmC1a5GFBNEzrlmHxb723e?usp=sharing) |
+| [GSE279914](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE279914) | Homo sapiens | bone marrow cells | Non-Cancer | diagnosis | 81,910 | [Download](https://drive.google.com/drive/folders/1xLac4niVh4tmC1a5GFBNEzrlmHxb723e?usp=sharing) |
+| [GSE269574](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE269574) | Homo sapiens | T Cells | Non-Cancer | ThymoSphere week 9 | 31,920 | [Download](https://drive.google.com/drive/folders/1xLac4niVh4tmC1a5GFBNEzrlmHxb723e?usp=sharing) |
+| [GSE278692](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE278692) | Homo sapiens | Multiple CD8+ T cell subtypes | Colorectal Cancer, HNSCC | Multiple patient conditions | 19,705 | [Download](https://drive.google.com/drive/folders/1xLac4niVh4tmC1a5GFBNEzrlmHxb723e?usp=sharing) |
+| [GSE253865](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE253865) | Homo sapiens | Neuroblastoma | Neuroblastoma | Control | 68,201 | [Download](https://drive.google.com/drive/folders/1xLac4niVh4tmC1a5GFBNEzrlmHxb723e?usp=sharing) |
+| [GSE264587](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE264587) | Homo sapiens | Thymus cells | Non-Cancer | Normal | 80,712 | [Download](https://drive.google.com/drive/folders/1xLac4niVh4tmC1a5GFBNEzrlmHxb723e?usp=sharing) |
+| [GSE269140](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE269140) | Homo sapiens | T Cells | Non-Cancer | SStim | 180,257 | [Download](https://drive.google.com/drive/folders/1xLac4niVh4tmC1a5GFBNEzrlmHxb723e?usp=sharing) |
+| [GSE269478](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE269478) | Homo sapiens | Monocytes | Non-Cancer | Cardiovascular Disease Risk Study | 62,962 | [Download](https://drive.google.com/drive/folders/1xLac4niVh4tmC1a5GFBNEzrlmHxb723e?usp=sharing) |
+| [GSE266225](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE266225) | Mus musculus | Macrophages | Non-Cancer | Infected, 8 weeks post curing, Control, 2 weeks post curing | 26,625 | [Download](https://drive.google.com/drive/folders/1xLac4niVh4tmC1a5GFBNEzrlmHxb723e?usp=sharing) |
+| [GSE264681](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE264681) | Homo sapiens | T Cells, CD4+ T Cells | B-ALL, Melanoma, Non-Cancer | Multiple co-culture conditions | 130,353 | [Download](https://drive.google.com/drive/folders/1xLac4niVh4tmC1a5GFBNEzrlmHxb723e?usp=sharing) |
+| [GSE273164](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE273164) | Homo sapiens | AML | Acute Myeloid Leukemia | Control | 28,032 | [Download](https://drive.google.com/drive/folders/1xLac4niVh4tmC1a5GFBNEzrlmHxb723e?usp=sharing) |
+
+## 📥 Download Options for CITE-seq Datasets
+
+**Individual Datasets**: Download h5ad files separately based on study from [this Google Drive folder](https://drive.google.com/drive/folders/1xLac4niVh4tmC1a5GFBNEzrlmHxb723e?usp=sharing).
+
 
 
 ## 📖 Citations
